@@ -1,0 +1,22 @@
+{% extends "math-tst.html" %}
+
+{% block content %}
+    <h2>Question 1:</h2>
+    <form action = "/math-tst-q2" method = "post">
+    <label for="q1" class="form-label ">What is 4 x 6?:</label>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="Wrong" name="q1" value="Wrong">14
+            <label class="form-check-label" for="Wrong"></label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="Wrong" name="q1" value="Wrong">10
+            <label class="form-check-label" for="Wrong"></label>
+		</div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="Right" name="q1" value="Right">24
+            <label class="form-check-label" for="Right"></label>
+		</div>
+    <br>    
+    <input type="submit" class="btn btn-dark start" value="Next">
+    </form>
+{% endblock %}

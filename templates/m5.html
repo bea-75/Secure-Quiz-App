@@ -1,0 +1,22 @@
+{% extends "math-tst.html" %}
+
+{% block content %}
+    <h2>Question 5:</h2>
+    <form action = "/math-tst-end" method = "post">
+    <label for="q5" class="form-label ">If 3x - 10 = 2x + 4, what is x?:</label>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="Wrong" name="q5" value="Wrong">4
+            <label class="form-check-label" for="Wrong"></label>
+        </div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="Right" name="q5" value="Right">6
+            <label class="form-check-label" for="Right"></label>
+		</div>
+        <div class="form-check">
+            <input type="radio" class="form-check-input" id="Wrong" name="q5" value="Wrong">1
+            <label class="form-check-label" for="Wrong"></label>
+		</div>
+    <br>    
+    <input type="submit" class="btn btn-dark start" value="Next">
+    </form>
+{% endblock %}
